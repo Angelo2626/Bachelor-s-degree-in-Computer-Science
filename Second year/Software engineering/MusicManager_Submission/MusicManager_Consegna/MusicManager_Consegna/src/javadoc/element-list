@@ -1,0 +1,8 @@
+com.musicmanager.controller
+com.musicmanager.exceptions
+com.musicmanager.main
+com.musicmanager.model.catalog
+com.musicmanager.model.feedback
+com.musicmanager.model.users
+com.musicmanager.persistence
+com.musicmanager.view

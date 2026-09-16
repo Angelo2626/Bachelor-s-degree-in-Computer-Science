@@ -1,0 +1,12 @@
+[
+  {
+    "type": "Autore",
+    "id": "USR-30F45B14",
+    "email": "angelo@musica.it",
+    "password": "angelo",
+    "nome": "Angelo",
+    "cognome": "Vaccaro",
+    "attivo": true,
+    "biografia": "Ciao, sono un autore!"
+  }
+]

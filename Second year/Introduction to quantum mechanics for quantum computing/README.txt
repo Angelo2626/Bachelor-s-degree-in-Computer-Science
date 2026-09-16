@@ -1,0 +1,1 @@
+The research was done personally with the simple purpose of learning (or at least starting to understand the subject a bit). It may therefore contain many errors.

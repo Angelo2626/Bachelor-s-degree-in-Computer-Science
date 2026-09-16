@@ -1,0 +1,101 @@
+[
+  {
+    "titolo": "Oh Love",
+    "annoComposizione": 2012,
+    "autorePrincipale": "Green Day",
+    "proprietarioEmail": "admin@musicmanager.it",
+    "genere": "Rock",
+    "documentiAssociati": [
+      {
+        "typeClass": "TracciaAudio",
+        "nomeFile": "Green Day - Oh Love.mp3",
+        "percorsoLocale": "media/Green Day - Oh Love.mp3",
+        "segmenti": []
+      }
+    ],
+    "commenti": [
+      {
+        "type": "Standard",
+        "testo": "È la mia canzone preferita!",
+        "autoreEmail": "admin@musicmanager.it",
+        "isUfficiale": false,
+        "strumentoUsato": "",
+        "risposte": [
+          {
+            "type": "Standard",
+            "testo": "Hai ragione",
+            "autoreEmail": "angelo@musica.it",
+            "isUfficiale": false,
+            "strumentoUsato": "",
+            "risposte": []
+          }
+        ]
+      },
+      {
+        "type": "Standard",
+        "testo": "Stupenda",
+        "autoreEmail": "angelo@musica.it",
+        "isUfficiale": false,
+        "strumentoUsato": "",
+        "risposte": []
+      }
+    ]
+  },
+  {
+    "titolo": "Bene",
+    "annoComposizione": 2016,
+    "autorePrincipale": "Gemitaiz",
+    "proprietarioEmail": "admin@musicmanager.it",
+    "genere": "Rap",
+    "documentiAssociati": [
+      {
+        "typeClass": "CollegamentoWeb",
+        "nomeFile": "Link",
+        "percorsoLocale": "https://www.youtube.com/watch?v\u003dN4O3ErZwqkg\u0026list\u003dRDN4O3ErZwqkg\u0026start_radio\u003d1",
+        "segmenti": []
+      }
+    ],
+    "commenti": []
+  },
+  {
+    "titolo": "Basket Case",
+    "annoComposizione": 1994,
+    "autorePrincipale": "Green Day",
+    "proprietarioEmail": "angelo@musica.it",
+    "genere": "Rock",
+    "documentiAssociati": [
+      {
+        "typeClass": "TracciaVideo",
+        "nomeFile": "Green Day - Basket Case [Official Music Video].mp4",
+        "percorsoLocale": "media/Green Day - Basket Case [Official Music Video].mp4",
+        "segmenti": []
+      }
+    ],
+    "commenti": []
+  },
+  {
+    "titolo": "Boulevard of Broken Dreams",
+    "annoComposizione": 2004,
+    "autorePrincipale": "Green Day",
+    "proprietarioEmail": "angelo@musica.it",
+    "genere": "Rock",
+    "documentiAssociati": [
+      {
+        "typeClass": "Spartito",
+        "nomeFile": "Green Day - Boulevard of Broken Dreams.pdf",
+        "percorsoLocale": "media/Green Day - Boulevard of Broken Dreams.pdf",
+        "segmenti": []
+      }
+    ],
+    "commenti": [
+      {
+        "type": "Standard",
+        "testo": "Canzone bellissima!",
+        "autoreEmail": "angelo@musica.it",
+        "isUfficiale": false,
+        "strumentoUsato": "",
+        "risposte": []
+      }
+    ]
+  }
+]

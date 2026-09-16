@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicmanager.view.GestioneDizionariController">
+    <Label text="Gestione Dizionari (Admin)" style="-fx-font-weight: bold; -fx-font-size: 18px;" />
+    <HBox spacing="10.0" alignment="CENTER">
+        <Label text="Dizionario:" />
+        <ChoiceBox fx:id="tipoDizChoice" />
+    </HBox>
+    <ListView fx:id="listaVoci" prefHeight="200.0" />
+    <HBox spacing="10.0" alignment="CENTER">
+        <TextField fx:id="nuovaVoceField" promptText="Nuova voce..." />
+        <Button onAction="#handleAggiungi" text="Aggiungi" style="-fx-background-color: #27ae60; -fx-text-fill: white;" />
+    </HBox>
+</VBox>

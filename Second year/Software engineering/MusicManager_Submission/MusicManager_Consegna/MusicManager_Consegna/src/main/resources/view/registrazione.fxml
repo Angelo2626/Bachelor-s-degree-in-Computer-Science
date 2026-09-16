@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="15.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicmanager.view.RegistrazioneController">
+    <padding>
+        <Insets bottom="30.0" left="40.0" right="40.0" top="30.0" />
+    </padding>
+
+    <Label text="Richiesta di Registrazione" textFill="#2c3e50">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+    </Label>
+
+    <TextField fx:id="nomeField" promptText="Nome" />
+    <TextField fx:id="cognomeField" promptText="Cognome" />
+    <TextField fx:id="emailField" promptText="Indirizzo Email" />
+    <PasswordField fx:id="passwordField" promptText="Password" />
+
+    <VBox spacing="5.0" alignment="CENTER_LEFT">
+        <Label text="Tipo di Account:" textFill="#7f8c8d">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <!-- UNICA CHOICEBOX PRESENTE -->
+        <ChoiceBox fx:id="ruoloChoice" prefWidth="250.0" />
+    </VBox>
+
+    <!-- AREA BIO: appare solo se si sceglie Autore/Interprete -->
+    <TextArea fx:id="bioArea" prefHeight="100.0" promptText="Scrivi la tua biografia (Obbligatorio per Autori/Interpreti)" visible="false" managed="false" wrapText="true" />
+
+    <Label fx:id="statusLabel" textFill="RED" />
+
+    <HBox alignment="CENTER" spacing="20.0">
+        <Button onAction="#handleAnnulla" prefWidth="100.0" style="-fx-background-color: #95a5a6; -fx-text-fill: white;" text="Annulla" />
+        <Button onAction="#handleRegistra" prefWidth="150.0" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold;" text="Invia Richiesta" />
+    </HBox>
+</VBox>

@@ -1,0 +1,39 @@
+[
+  {
+    "tipoDizionario": "Generi",
+    "voci": [
+      "Pop",
+      "Rock",
+      "Rap",
+      "Indie",
+      "Jazz"
+    ]
+  },
+  {
+    "tipoDizionario": "Strumenti",
+    "voci": [
+      "Chitarra",
+      "Batteria",
+      "Pianoforte",
+      "Chitarra e batteria",
+      "Tromba",
+      "Sassofono"
+    ]
+  },
+  {
+    "tipoDizionario": "Titoli",
+    "voci": [
+      "Basket Case",
+      "Oh Love",
+      "Bene",
+      "Boulevard of Broken Dreams"
+    ]
+  },
+  {
+    "tipoDizionario": "Autori",
+    "voci": [
+      "Green Day",
+      "Gemitaiz"
+    ]
+  }
+]

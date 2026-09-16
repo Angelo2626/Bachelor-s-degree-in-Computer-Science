@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicmanager.view.AggiungiBranoController">
+    <padding><Insets bottom="30.0" left="40.0" right="40.0" top="30.0" /></padding>
+
+    <Label fx:id="titoloFinestra" text="Aggiungi Nuovo Brano" textFill="#8e44ad">
+        <font><Font name="System Bold" size="20.0" /></font>
+    </Label>
+
+    <TextField fx:id="titoloField" promptText="Titolo del Brano" />
+    <TextField fx:id="autoreField" promptText="Autore Principale" />
+    <TextField fx:id="annoField" promptText="Anno di Composizione" />
+
+    <Label text="Genere (dal Dizionario):" textFill="#7f8c8d" />
+    <ChoiceBox fx:id="genereChoice" prefWidth="250.0" />
+
+    <Label fx:id="statusLabel" textFill="RED" />
+
+    <HBox alignment="CENTER" spacing="20.0">
+        <Button onAction="#handleAnnulla" text="Annulla" />
+        <Button onAction="#handleSalva" style="-fx-background-color: #8e44ad; -fx-text-fill: white; -fx-font-weight: bold;" text="Salva nel Database" />
+    </HBox>
+</VBox>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="900.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicmanager.view.DettaglioController">
+    <top>
+        <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #34495e; -fx-padding: 15px;">
+            <Label fx:id="titoloLabel" text="Titolo Brano" textFill="WHITE"><font><Font name="System Bold" size="24.0" /></font></Label>
+            <Label fx:id="autoreAnnoLabel" text="Autore - Anno" textFill="#ecf0f1" />
+            <Label fx:id="proprietarioLabel" text="Caricato da: ..." textFill="#bdc3c7"><font><Font name="System Italic" size="12.0" /></font></Label>
+        </VBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true">
+            <VBox spacing="20.0" style="-fx-padding: 25px;">
+                <Label text="Commenti e Note Temporali:"><font><Font name="System Bold" size="16.0" /></font></Label>
+                <TreeView fx:id="alberoCommenti" prefHeight="250.0" />
+                <Button onAction="#handleEliminaCommento" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" text="Elimina Selezionato" />
+
+                <VBox spacing="10.0" style="-fx-background-color: #f1f2f6; -fx-padding: 15px; -fx-border-color: #dfe4ea; -fx-border-radius: 8px;">
+                    <Label text="Nuovo Commento / Nota:"><font><Font name="System Bold" size="13.0" /></font></Label>
+                    <TextField fx:id="nuovoCommentoField" promptText="Scrivi il messaggio..." />
+                    <HBox alignment="CENTER_LEFT" spacing="10.0">
+                        <Label text="Inizio:" />
+                        <TextField fx:id="inizioH" prefWidth="40.0" promptText="H" /><TextField fx:id="inizioM" prefWidth="40.0" promptText="M" /><TextField fx:id="inizioS" prefWidth="40.0" promptText="S" />
+                        <Label text="  Fine:" />
+                        <TextField fx:id="fineH" prefWidth="40.0" promptText="H" /><TextField fx:id="fineM" prefWidth="40.0" promptText="M" /><TextField fx:id="fineS" prefWidth="40.0" promptText="S" />
+                    </HBox>
+                    <TextField fx:id="strumentoField" managed="false" promptText="Strumento usato..." visible="false" />
+                    <HBox spacing="15.0" alignment="CENTER_LEFT">
+                        <CheckBox fx:id="checkUfficiale" managed="false" style="-fx-text-fill: #f39c12; -fx-font-weight: bold;" text="Commento Ufficiale ⭐" visible="false" />
+                        <Button onAction="#handleInviaCommento" prefWidth="150.0" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold;" text="Invia / Rispondi" />
+                    </HBox>
+                </VBox>
+
+                <Separator />
+
+                <Label text="Mappatura Brani nel Concerto:"><font><Font name="System Bold" size="16.0" /></font></Label>
+                <TableView fx:id="tabellaSegmenti" prefHeight="200.0">
+                    <columns>
+                        <TableColumn fx:id="colSegTitolo" prefWidth="150.0" text="Titolo" />
+                        <TableColumn fx:id="colSegInizio" prefWidth="70.0" text="In" />
+                        <TableColumn fx:id="colSegFine" prefWidth="70.0" text="Out" />
+                        <TableColumn fx:id="colSegEsecutori" prefWidth="130.0" text="Esecutori" />
+                        <TableColumn fx:id="colSegStrumenti" prefWidth="130.0" text="Strumenti" />
+                        <TableColumn fx:id="colSegData" prefWidth="100.0" text="Data" />
+                        <TableColumn fx:id="colSegLuogo" prefWidth="100.0" text="Luogo" />
+                    </columns>
+                </TableView>
+
+                <VBox spacing="10.0" style="-fx-background-color: #f8f9fa; -fx-padding: 15px; -fx-border-color: #dee2e6; -fx-border-radius: 8px;">
+                    <Label fx:id="labelTitoloMappatura" text="Mappa Brano in questo Video:"><font><Font name="System Bold" size="13.0" /></font></Label>
+                    <HBox spacing="10.0" alignment="CENTER_LEFT">
+                        <TextField fx:id="segTitoloField" prefWidth="250.0" promptText="Titolo" />
+                        <Label text="In:" />
+                        <TextField fx:id="segInH" prefWidth="35.0" /><TextField fx:id="segInM" prefWidth="35.0" /><TextField fx:id="segInS" prefWidth="35.0" />
+                        <Label text="Out:" />
+                        <TextField fx:id="segOutH" prefWidth="35.0" /><TextField fx:id="segOutM" prefWidth="35.0" /><TextField fx:id="segOutS" prefWidth="35.0" />
+                    </HBox>
+                    <HBox spacing="10.0" alignment="CENTER_LEFT">
+                        <TextField fx:id="segEsecField" prefWidth="150.0" promptText="Esecutori" />
+                        <TextField fx:id="segStrumentiField" prefWidth="150.0" promptText="Strumenti" />
+                        <TextField fx:id="segLuogoField" prefWidth="150.0" promptText="Luogo" />
+                        <DatePicker fx:id="segDataPicker" prefWidth="150.0" promptText="Data Esecuzione" />
+                        <Button onAction="#handleAggiungiSegmento" prefWidth="120.0" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold;" text="Mappa Brano" />
+                    </HBox>
+                </VBox>
+            </VBox>
+        </ScrollPane>
+    </center>
+
+    <bottom>
+        <VBox alignment="CENTER" spacing="10.0" style="-fx-padding: 15px; -fx-background-color: #ecf0f1;">
+            <HBox alignment="CENTER" spacing="15.0">
+                <Button onAction="#handleAssociaFile" prefWidth="130.0" style="-fx-background-color: #f39c12; -fx-text-fill: white;" text="📁 Associa File" />
+                <Button onAction="#handleAssociaLink" prefWidth="130.0" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="🔗 Collega Link" />
+                <Button onAction="#handleRiproduciMedia" prefWidth="130.0" style="-fx-background-color: #27ae60; -fx-text-fill: white;" text="▶️ Riproduci" />
+                <Button onAction="#handleChiudi" prefWidth="100.0" text="Chiudi" />
+            </HBox>
+            <Label fx:id="fileStatusLabel" text="Nessun file associato" textFill="#7f8c8d" />
+        </VBox>
+    </bottom>
+</BorderPane>

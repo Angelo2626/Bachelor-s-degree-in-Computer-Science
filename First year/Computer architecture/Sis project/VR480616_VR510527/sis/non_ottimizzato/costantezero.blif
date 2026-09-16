@@ -1,0 +1,8 @@
+.model COSTANTE0 
+.outputs z4 z3 z2 z1 z0
+.names z4
+.names z3
+.names z2
+.names z1
+.names z0
+.end

@@ -1,0 +1,9 @@
+.model UGUALE2
+.inputs a1 a0 b1 b0
+.outputs o 
+.subckt XNOR a=a1 b=b1 x=x1
+.subckt XNOR a=a0 b=b0 x=x0
+.names x1 x0 o 
+11 1
+.search xnor.blif
+.end

@@ -1,0 +1,16 @@
+.model SHIFT3
+.inputs a b 
+.outputs o4 o3 o2 o1 o0 
+.names a b o4
+-- 0
+.names a b o3 
+-- 0
+.names a b o2
+-- 0 
+.names a b o1
+10 1
+11 1
+.names a b o0
+01 1
+11 1
+.end

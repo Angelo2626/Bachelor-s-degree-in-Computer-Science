@@ -1,0 +1,127 @@
+.model DATAPATH
+.inputs inizia primo1 primo0 secondo1 secondo0
+.outputs cmin cmax manche1 manche0
+.latch    inreg4 outrm4 re NIL 0
+.latch    inreg3 outrm3 re NIL 0
+.latch    inreg2 outrm2 re NIL 0
+.latch    inreg1 outrm1 re NIL 0
+.latch    inreg0 outrm0 re NIL 0
+.latch    x4 ot4 re NIL 0
+.latch    x3 ot3 re NIL 0
+.latch    x2 ot2 re NIL 0
+.latch    x1 ot1 re NIL 0
+.latch    x0 ot0 re NIL 0
+.latch    primo1 pri1 re NIL 0
+.latch    primo0 pri0 re NIL 0
+.latch    secondo1 sec1 re NIL 0
+.latch    secondo0 sec0 re NIL 0
+.latch    manche1 man1 re NIL 0
+.latch    manche0 man0 re NIL 0
+.names outrm4 outrm3 outrm2 [214] cmin
+1--- 1
+-1-- 1
+--1- 1
+---0 1
+.names outrm0 ot2 ot1 ot0 somma2 somma1 [205] [206] cmax
+01111111 1
+11101111 1
+00110111 1
+10100111 1
+01011011 1
+11001011 1
+00010011 1
+10000011 1
+.names inizia secondo1 secondo0 orb Primo1 [210] [211] [213] manche1
+----10-1 1
+----1-11 1
+-0-0-00- 1
+0-0-0-01 1
+.names manche1 orb Primo1 [210] [211] [213] manche0
+--11-1 1
+---001 1
+0010-- 1
+-0000- 1
+.names primo1 primo0 pri1 pri0 man1 man0 ora
+111101 1
+010101 1
+101001 1
+000001 1
+.names secondo1 secondo0 sec1 sec0 man1 man0 orb
+111110 1
+010110 1
+101010 1
+000010 1
+.names inizia primo1 ora Primo1
+010 1
+.names outrm4 inreg0 somma4 [217] inreg4
+11-- 1
+--11 1
+.names outrm3 inreg0 somma3 [217] inreg3
+11-- 1
+--11 1
+.names outrm2 inreg0 somma2 [217] inreg2
+11-- 1
+--11 1
+.names outrm1 inreg0 somma1 [217] inreg1
+11-- 1
+--11 1
+.names inizia outrm0 [219] inreg0
+-01 1
+010 1
+.names inizia primo1 primo0 ot4 x4
+0--1 1
+111- 1
+.names inizia primo1 primo0 ot3 x3
+0--1 1
+101- 1
+110- 1
+.names inizia primo0 ot2 x2
+10- 1
+0-1 1
+.names inizia secondo1 ot1 x1
+11- 1
+0-1 1
+.names inizia secondo0 ot0 x0
+11- 1
+0-1 1
+.names outrm4 [220] somma4
+11 1
+00 1
+.names outrm3 [221] somma3
+11 1
+00 1
+.names outrm2 [214] somma2
+11 1
+00 1
+.names outrm1 outrm0 somma1
+01 1
+10 1
+.names ot4 somma4 [205]
+11 1
+00 1
+.names ot3 somma3 [206]
+11 1
+00 1
+.names inizia secondo0 [210]
+1- 1
+-0 1
+.names primo0 ora [211]
+0- 1
+-1 1
+.names secondo1 orb [213]
+10 1
+.names outrm1 outrm0 [214]
+0- 1
+-0 1
+.names inizia inreg0 [217]
+00 1
+.names manche1 manche0 [219]
+1- 1
+-1 1
+.names outrm3 somma3 [220]
+0- 1
+-1 1
+.names outrm2 somma2 [221]
+0- 1
+-1 1
+.end

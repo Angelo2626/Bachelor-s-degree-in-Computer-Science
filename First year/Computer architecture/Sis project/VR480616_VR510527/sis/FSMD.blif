@@ -1,0 +1,174 @@
+.model FSMD
+.inputs primo1 primo0 secondo1 secondo0 inizia
+.outputs manche1 manche0 partita1 partita0
+.latch    [227] LatchOut_v5   0
+.latch    [228] LatchOut_v6   1
+.latch    [229] LatchOut_v7   0
+.latch    inreg4 outrm4 re NIL 0
+.latch    inreg3 outrm3 re NIL 0
+.latch    inreg2 outrm2 re NIL 0
+.latch    inreg1 outrm1 re NIL 0
+.latch    inreg0 outrm0 re NIL 0
+.latch    x4 ot4 re NIL 0
+.latch    x3 ot3 re NIL 0
+.latch    x2 ot2 re NIL 0
+.latch    x1 ot1 re NIL 0
+.latch    x0 ot0 re NIL 0
+.latch    primo1 pri1 re NIL 0
+.latch    primo0 pri0 re NIL 0
+.latch    secondo1 sec1 re NIL 0
+.latch    secondo0 sec0 re NIL 0
+.latch    manche1 man1 re NIL 0
+.latch    manche0 man0 re NIL 0
+.names secondo1 secondo0 inizia Primo1 orb [755] [756] [759] manche1
+---1-0-1 1
+---1--11 1
+0---000- 1
+-000--01 1
+.names manche1 Primo1 orb [755] [756] [759] manche0
+-1-1-1 1
+---001 1
+0100-- 1
+-0000- 1
+.names partita0 [227] [229] [754] [760] partita1
+--0-1 1
+01-1- 1
+.names inizia manche1 manche0 max LatchOut_v5 LatchOut_v7 [748] [754] partita0
+-1-1-1-- 1
+0---11-- 1
+--1--111 1
+--11001- 1
+.names outrm0 ot2 ot1 ot0 somma2 somma1 [746] [747] max
+01111111 1
+11101111 1
+00110111 1
+10100111 1
+01011011 1
+11001011 1
+00010011 1
+10000011 1
+.names inizia manche1 manche0 max LatchOut_v5 LatchOut_v7 LatchOut_v6 [748] \
+[754] [757] [764] [227]
+0--11------ 1
+--11---0--- 1
+--0--0-0--- 1
+---1--1--0- 1
+-----11--0- 1
+0---1-----1 1
+-101--1---- 1
+--1--11-1-- 1
+.names inizia manche0 LatchOut_v5 LatchOut_v7 LatchOut_v6 [748] [757] [229]
+-1-1--- 1
+0--1-1- 1
+--0-1-0 1
+.names inizia manche1 manche0 partita1 [227] LatchOut_v5 LatchOut_v6 [748] \
+[760] [761] [764] [228]
+1---------- 1
+--------1-- 1
+--11------- 1
+------1--0- 1
+-----0----0 1
+-11---1---- 1
+--0-0--0--- 1
+--0--1-0--- 1
+.names primo1 inizia ora Primo1
+100 1
+.names primo1 primo0 pri1 pri0 man1 man0 ora
+111101 1
+010101 1
+101001 1
+000001 1
+.names secondo1 secondo0 sec1 sec0 man1 man0 orb
+111110 1
+010110 1
+101010 1
+000010 1
+.names outrm4 inreg0 somma4 [765] inreg4
+11-- 1
+--11 1
+.names outrm3 inreg0 somma3 [765] inreg3
+11-- 1
+--11 1
+.names outrm2 inreg0 somma2 [765] inreg2
+11-- 1
+--11 1
+.names outrm1 inreg0 somma1 [765] inreg1
+11-- 1
+--11 1
+.names inizia outrm0 [761] inreg0
+-01 1
+010 1
+.names primo1 primo0 inizia ot4 x4
+--01 1
+111- 1
+.names primo1 primo0 inizia ot3 x3
+--01 1
+011- 1
+101- 1
+.names primo0 inizia ot2 x2
+01- 1
+-01 1
+.names secondo1 inizia ot1 x1
+11- 1
+-01 1
+.names secondo0 inizia ot0 x0
+11- 1
+-01 1
+.names outrm4 [769] somma4
+11 1
+00 1
+.names outrm3 outrm2 somma2 [750] somma3
+10-- 1
+1-1- 1
+-1-0 1
+.names outrm2 [770] somma2
+11 1
+00 1
+.names outrm1 outrm0 somma1
+01 1
+10 1
+.names ot4 somma4 [746]
+11 1
+00 1
+.names ot3 somma3 [747]
+11 1
+00 1
+.names manche1 LatchOut_v6 [748]
+0- 1
+-1 1
+.names outrm3 somma2 [750]
+1- 1
+-1 1
+.names outrm4 outrm2 [750] [754]
+1-- 1
+-1- 1
+--1 1
+.names secondo0 inizia [755]
+0- 1
+-1 1
+.names primo0 ora [756]
+0- 1
+-1 1
+.names manche1 manche0 [757]
+1- 1
+-0 1
+.names secondo1 orb [759]
+10 1
+.names partita0 [227] LatchOut_v6 [760]
+1-- 1
+-11 1
+.names manche1 manche0 [761]
+1- 1
+-1 1
+.names LatchOut_v6 [757] [764]
+1- 1
+-1 1
+.names inizia inreg0 [765]
+00 1
+.names outrm3 somma3 [769]
+0- 1
+-1 1
+.names outrm1 outrm0 [770]
+0- 1
+-0 1
+.end

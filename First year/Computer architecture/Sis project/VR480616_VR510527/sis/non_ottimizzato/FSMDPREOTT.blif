@@ -1,0 +1,11 @@
+.model FSMD
+.inputs primo1 primo0 secondo1 secondo0 inizia 
+.outputs manche1 manche0 partita1 partita0 
+
+.subckt DATAPATH inizia=inizia primo1=primo1 primo0=primo0 secondo1=secondo1 secondo0=secondo0 cmin=min cmax=max manche1=manche1 manche0=manche0 
+.subckt FSM I=inizia M1=manche1 M0=manche0 MI=min MA=max PA1=partita1 PA2=partita0 
+
+.search DATAPATH.blif
+.search CONTROLLOREOTT.blif
+
+.end

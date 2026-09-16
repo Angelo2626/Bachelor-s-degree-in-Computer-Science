@@ -1,0 +1,8 @@
+.model MINOREUGUALE5
+.inputs a4 a3 a2 a1 a0 b4 b3 b2 b1 b0 
+.outputs o 
+.subckt MAGGIORE5 A4=a4 A3=a3 A2=a2 A1=a1 A0=a0 B4=b4 B3=b3 B2=b2 B1=b1 B0=b0 O=z
+.names z o 
+0 1 
+.search maggiore5.blif
+.end

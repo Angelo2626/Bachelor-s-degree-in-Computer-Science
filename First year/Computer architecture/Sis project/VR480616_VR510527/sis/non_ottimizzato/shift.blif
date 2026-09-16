@@ -1,0 +1,14 @@
+.model SHIFT
+.inputs a b 
+.outputs o3 o2 o1 o0 
+.names a b o3 
+10 1
+11 1
+.names a b o2
+01 1
+11 1
+.names a b o1
+-- 0
+.names a b o0 
+-- 0
+.end

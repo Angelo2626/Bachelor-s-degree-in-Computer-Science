@@ -1,0 +1,5 @@
+.model UNO
+.outputs uno
+.names uno
+1
+.end

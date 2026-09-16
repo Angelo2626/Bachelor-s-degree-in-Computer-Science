@@ -1,0 +1,154 @@
+.model FSM
+.inputs I M1 M0 MI MA
+.outputs PA1 PA2
+.latch    [227] LatchOut_v5   0
+.latch    [228] LatchOut_v6   1
+.latch    [229] LatchOut_v7   0
+.start_kiss
+.i 5
+.o 2
+.p 45
+.s 7
+.r IP
+1---- IP IP 00
+000-- IP IP 00
+011-0 IP IP 00
+001-0 IP VP1 00
+00111 IP FP 01
+010-0 IP VS1 00
+01011 IP FS 10
+01111 IP IP 11
+1---- VP1 IP 00
+000-- VP1 VP1 00
+011-0 VP1 VP1 00
+0010- VP1 VP2 00
+0011- VP1 VP2 01
+01111 VP1 FP 01
+010-0 VP1 IP 00
+01011 VP1 IP 11
+1---- FP IP 00
+0---- FP FP 01
+1---- VS1 IP 00
+000-- VS1 VS1 00
+011-0 VS1 VS1 00
+001-0 VS1 IP 00
+0100- VS1 VS2 00
+0101- VS1 VS2 10
+01111 VS1 FS 10
+00111 VS1 IP 11
+1---- FS IP 00
+0---- FS FS 10
+0-11- FS FS 10
+1---- VP2 IP 00
+0000- VP2 VP2 00
+0001- VP2 VP2 00
+01100 VP2 VP2 00
+0010- VP2 FP 00
+01011 VP2 FP 01
+0-11- VP2 FP 01
+010-0 VP2 VP1 00
+1---- VS2 IP 00
+0000- VS2 VS2 00
+0001- VS2 VS2 10
+01100 VS2 VS2 00
+001-0 VS2 VS1 00
+0100- VS2 FS 00
+01-1- VS2 FS 10
+00111 VS2 FS 10
+.end_kiss
+.latch_order LatchOut_v5 LatchOut_v6 LatchOut_v7
+.code IP 010
+.code VP1 001
+.code FP 111
+.code VS1 000
+.code FS 110
+.code VP2 011
+.code VS2 100
+.names I M0 MI LatchOut_v5 LatchOut_v6 LatchOut_v7 [257] [258] [259] [260] \
+[261] [263] [264] [227]
+---1--------1 1
+----1---01--- 1
+0----0----0-- 1
+0--1-------1- 1
+-1----0-----1 1
+----1--1----1 1
+-11-1----1--- 1
+.names I M0 LatchOut_v5 LatchOut_v6 [227] PA1 [258] [261] [262] [228]
+1-------- 1
+--------1 1
+-1---1--- 1
+---1--0-- 1
+--1----0- 1
+--000-1-- 1
+.names I LatchOut_v5 LatchOut_v6 [259] [260] [261] [229]
+----11 1
+0010-- 1
+.names MI [227] [229] PA2 [262] PA1
+--0-1 1
+11-0- 1
+.names M1 M0 MI MA LatchOut_v5 LatchOut_v7 [257] [260] [264] PA2
+----1--1- 1
+1--1---1- 1
+-11---11- 1
+-1--001-1 1
+.names M1 LatchOut_v6 [257]
+0- 1
+-1 1
+.names M1 M0 [259] [258]
+--0 1
+10- 1
+.names M1 M0 [259]
+1- 1
+-0 1
+.names I LatchOut_v7 [260]
+01 1
+.names M0 [257] [261]
+1- 1
+-1 1
+.names LatchOut_v6 [227] PA2 [262]
+--1 1
+11- 1
+.names LatchOut_v6 [259] [263]
+1- 1
+-1 1
+.names I MA [264]
+01 1
+.exdc 
+.inputs I M1 M0 MI MA LatchOut_v5 LatchOut_v6 LatchOut_v7
+.outputs [227] [228] [229] PA1 PA2
+.names I M1 M0 MI MA LatchOut_v5 LatchOut_v6 LatchOut_v7 [227]
+-----101 1
+01-0101- 1
+0-10110- 1
+01-01-01 1
+0-1010-0 1
+0-101-00 1
+.names I M1 M0 MI MA LatchOut_v5 LatchOut_v6 LatchOut_v7 [228]
+-----101 1
+01-0101- 1
+0-10110- 1
+01-01-01 1
+0-1010-0 1
+0-101-00 1
+.names I M1 M0 MI MA LatchOut_v5 LatchOut_v6 LatchOut_v7 [229]
+-----101 1
+01-0101- 1
+0-10110- 1
+01-01-01 1
+0-1010-0 1
+0-101-00 1
+.names I M1 M0 MI MA LatchOut_v5 LatchOut_v6 LatchOut_v7 PA1
+-----101 1
+01-0101- 1
+0-10110- 1
+01-01-01 1
+0-1010-0 1
+0-101-00 1
+.names I M1 M0 MI MA LatchOut_v5 LatchOut_v6 LatchOut_v7 PA2
+-----101 1
+01-0101- 1
+0-10110- 1
+01-01-01 1
+0-1010-0 1
+0-101-00 1
+.end

@@ -1,0 +1,20 @@
+.model MULTIPLEXER51
+.inputs s a4 a3 a2 a1 a0 b4 b3 b2 b1 b0
+.outputs o4 o3 o2 o1 o0
+.names s a4 b4 o4 
+11- 1
+0-1 1
+.names s a3 b3 o3 
+11- 1
+0-1 1
+.names s a2 b2 o2 
+11- 1
+0-1 1
+.names s a1 b1 o1 
+11- 1
+0-1 1
+.names s a0 b0 o0 
+11- 1
+0-1 1
+.end
+

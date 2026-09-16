@@ -1,0 +1,1 @@
+The notes and exercises for the subject were done in the notebook, so they are not available.

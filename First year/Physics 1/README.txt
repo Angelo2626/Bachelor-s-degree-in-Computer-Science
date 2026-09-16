@@ -1,0 +1,1 @@
+Most of the exercises were done in the notebook; here you will only find notes, a formula sheet, and a few exercises.

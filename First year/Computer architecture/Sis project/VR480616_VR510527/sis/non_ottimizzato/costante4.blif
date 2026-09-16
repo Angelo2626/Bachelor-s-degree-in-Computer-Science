@@ -1,0 +1,9 @@
+.model COSTANTE4
+.outputs q4 q3 q2 q1 q0
+.names q4
+.names q3 
+.names q2 
+1
+.names q1
+.names q0 
+.end

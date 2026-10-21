@@ -1,1 +1,1 @@
-The notes and exercises for the subject were done in the notebook, so they are not available.
+The notes and exercises were done in the notebook and are therefore not available. A PDF is available with a general review of high school mathematics, which was useful to me for studying analysis after many years without mathematics. The PDF is also available in the Analysis 2 folder.
